@@ -9,7 +9,6 @@ var db = require('./models/db'),
     project = require('./models/projects');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
 var projects = require('./routes/projects');
 
 var app = express();
@@ -33,7 +32,6 @@ app.use(require('node-sass-middleware')({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
 app.use('/projects', projects);
 
 // catch 404 and forward to error handler

@@ -3,6 +3,6 @@
 
 <div>
   {{#each projects}}
-    <p>{{this.firstName}} {{ this.lastName }}, <a href="{{ this.url }}">Project Page</a> - Categories: {{ this.categories }}</p> 
+    <p>{{this.firstName}} {{ this.lastName }}, <a href="/projects/{{ this._id }}">Project Page</a> - Categories: {{ this.categories }}</p> 
   {{/each}}
 </div>
