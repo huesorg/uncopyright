@@ -1,0 +1,8 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<div>
+  {{#each projects}}
+    <p>{{this.firstName}} {{ this.lastName }}, <a href="{{ this.url }}">Project Page</a> - Categories: {{ this.categories }}</p> 
+  {{/each}}
+</div>
