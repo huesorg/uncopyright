@@ -10,13 +10,9 @@ router.route('/')
               if (err) {
                   return console.error(err);
               } else {
-                  res.format({
-                      html: function(){
-                          res.render('projects/index', {
-                              title: "Projects",
-                              "projects": projects
-                          });
-                      }
+                  res.render('projects/index', {
+                      title: "Projects",
+                      projects: projects
                   });
               }
         });
@@ -56,13 +52,8 @@ router.route('/:id')
             if (err) {
               console.log('GET Error: There was a problem retrieving: ' + err);
             } else {
-              console.log('GET Retrieving ID: ' + project._id);
-              res.format({
-                  html: function(){
-                      res.render('projects/show', {
-                          "project" : project
-                      });
-                  }
+              res.render('projects/show', {
+                  "project" : project
               });
             }
         });
