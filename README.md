@@ -36,5 +36,5 @@ Directory application for Copyright-free works and creatives built using Node, E
 #### Running The App
 1. Run `npm start` from root and navigate to:
   ```
-  http:/localhost:3000
+  http://localhost:3000
   ```
