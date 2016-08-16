@@ -3,14 +3,14 @@ var router = express.Router();
 var mongoose = require('mongoose');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
 
     mongoose.model('Project').count({}, function (err, projectCount) {
         if (err) {
             return console.error(err);
         } else {
             res.render('index', {
-                title: 'The Uncopyright Project',
+                name: 'The Uncopyright Project',
                 projectCount: projectCount
             });
         }

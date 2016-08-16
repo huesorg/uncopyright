@@ -5,13 +5,13 @@ var mongoose = require('mongoose');
 router.route('/')
 
     // GET all projects
-    .get(function(req, res, next) {
+    .get(function(req, res) {
         mongoose.model('Project').find({}, function (err, projects) {
               if (err) {
                   return console.error(err);
               } else {
                   res.render('projects/index', {
-                      title: "Projects",
+                      name: "Projects",
                       projects: projects
                   });
               }
@@ -19,6 +19,7 @@ router.route('/')
     })
 
 router.param('id', function(req, res, next, id) {
+
     mongoose.model('Project').findById(id, function (err, project) {
         //if it isn't found, we are going to repond with 404
         if (err) {
@@ -53,7 +54,7 @@ router.route('/:id')
               console.log('GET Error: There was a problem retrieving: ' + err);
             } else {
               res.render('projects/show', {
-                  "project" : project
+                  project: project
               });
             }
         });
