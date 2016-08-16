@@ -8,4 +8,4 @@ var projectSchema = new mongoose.Schema({
   createdAt: Date,
   categories: String
 });
-mongoose.model('Project', projectSchema);
+mongoose.model('Project', projectSchema, 'projects');
