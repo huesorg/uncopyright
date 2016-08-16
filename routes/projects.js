@@ -6,15 +6,16 @@ router.route('/')
 
     // GET all projects
     .get(function(req, res) {
+
         mongoose.model('Project').find({}, function (err, projects) {
-              if (err) {
-                  return console.error(err);
-              } else {
-                  res.render('projects/index', {
-                      name: "Projects",
-                      projects: projects
-                  });
-              }
+            if (err) {
+                return console.error(err);
+            } else {
+                res.render('projects/index', {
+                    name: "Projects",
+                    projects: projects
+                });
+            }
         });
     })
 
