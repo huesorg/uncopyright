@@ -1,5 +1,5 @@
 # The Uncopyright Project
-Directory application for Copyright-free works and creatives built using Node, Express, Mongo, and Handlebars.
+Directory application for Copyright-free works and creatives built using Node, Express, Mongo, & React.
 
 #### Building The App
 
