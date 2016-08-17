@@ -6,6 +6,7 @@ var express = require('express');
     logger = require('morgan');
     cookieParser = require('cookie-parser');
     bodyParser = require('body-parser');
+    sassMiddleware = require('node-sass-middleware');
     db = require('./models/db'),
     project = require('./models/projects');
     routes = require('./routes/index');
@@ -23,13 +24,20 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('node-sass-middleware')({
+
+
+// styles
+app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
-  sourceMap: true
+  sourceMap: true,
+  debug: true
 }));
+
+// static files
 app.use(express.static(path.join(__dirname, 'public')));
 
+// routes
 app.use('/', routes);
 app.use('/projects', projects);
 
