@@ -1,8 +1,48 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+//
+// IMPORTING STYLES
+//
 
-  a {
-    color: #bada55;
-  }
+@import "scss/normalize";
+
+@import "scss/mixins";
+
+@import "scss/base";
+
+@import "scss/typography";
+
+@media only screen and (min-width: 480px) {
+
+	@import "scss/480up";
+
+} // end of media query
+
+@media only screen and (min-width: 600px) {
+
+	@import "scss/600up";
+
+} // end of media query
+
+@media only screen and (min-width: 840px) {
+
+	@import "scss/840up";
+
+} // end of media query
+
+@media only screen and (min-width: 1280px) {
+
+	@import "scss/1280up";
+
+} // end of media query
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+	// styles in 2x.scss
+	@import "scss/2x";
+
+} // end of media query
+
+@media print {
+	@import "scss/print";
 }
