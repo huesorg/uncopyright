@@ -182,4 +182,9 @@ NAVIGATION STYLES
 			// float:right;
 		}
 	}
+
+	.mdl-menu {
+		font-family:$theme-font;
+		color:darken($tan,10%);
+	}
 }
