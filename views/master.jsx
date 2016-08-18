@@ -20,7 +20,7 @@ var MasterLayout = React.createClass({
                             <nav className="mdl-navigation">
                                 <a className="mdl-navigation__link" href="./">Home</a>
                                 <a className="mdl-navigation__link" href="/projects">Works</a>
-                                <a className="mdl-navigation__link" href="#">About</a>
+                                <a className="mdl-navigation__link" href="/about">About</a>
                             </nav>
                         </div>
                         <main className="mdl-layout__content">
