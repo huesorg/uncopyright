@@ -58,6 +58,11 @@ var ProjectListComponent = React.createClass({
     return (
       <MasterLayout name={ this.props.name }>
 
+        <a href="https://hues.typeform.com/to/ahz9lb" data-mode="2" target="_blank"
+            className="typeform-share link mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab" >
+            <i className="material-icons">add</i>
+        </a>
+
         <div className="mdl-grid wrap">
             {this.props.projects.map(function(project) {
                return <ListItemWrapper key={project.id} data={project}/>;

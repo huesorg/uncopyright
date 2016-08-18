@@ -619,6 +619,15 @@ NAVIGATION STYLES
 /*********************
 /PROJECTS STYLES
 *********************/
+.typeform-share {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background: #f07a33 !important;
+  color: #fff; }
+  .typeform-share:hover {
+    background: #f2894b; }
+
 .work {
   display: -webkit-box;
   display: -moz-box;
