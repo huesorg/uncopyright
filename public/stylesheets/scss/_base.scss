@@ -68,6 +68,7 @@ NAVIGATION STYLES
 .mdl-layout__drawer-button {
 	border:3px solid $accent-color;
 	@include rounded(100%);
+	line-height:54px;
 	background:#fff;
 	i {
 		color:$accent-color;
@@ -85,6 +86,16 @@ NAVIGATION STYLES
 *********************/
 
 .work {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+	-webkit-align-content: space-between;
+ 	align-content: space-between;
 
 	.mdl-card__media {
 		background:$tan;
@@ -104,11 +115,13 @@ NAVIGATION STYLES
   		justify-content: center;
 		display:flex;
 		background:$tan;
+		@include css-gradient(darken($tan,7%),$tan);
 		text-align:center;
 		@include rounded(100px);
 		i {
 			color:#fff;
 			font-size:60px;
+			text-shadow: 0 1px 1px darken($tan,10%);
 
 			/* Modifying typical MDL icon usage to accomodate classes */
 
@@ -151,12 +164,22 @@ NAVIGATION STYLES
 		color:$slate;
 	}
 
-	.mdl-button {
-		background:$tan;
-		color:#fff;
+	.mdl-card__actions {
+		background:lighten($tan,15%);
+		display:flex;
+		justify-content: space-between;
 
-		&:hover {
-			background:$orange;
+		.mdl-button {
+			color:$slate;
+
+			&:hover {
+				background:$tan;
+				color:#fff;
+			}
+		}
+
+		button {
+			// float:right;
 		}
 	}
 }
