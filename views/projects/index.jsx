@@ -2,6 +2,7 @@ var React = require('react');
 var MasterLayout = require('../master');
 import Gravatar from 'react-gravatar';
 
+
 var ListItemWrapper = React.createClass({
   render: function() {
     return (
@@ -40,11 +41,14 @@ var ListItemWrapper = React.createClass({
             <ul className="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
             data-mdl-for={"work--menu-" + this.props.data._id}>
                 <li disabled className="mdl-menu__item">View Creator Profile</li>
-                <li className="mdl-menu__item">Generate Work URL</li>
+                <li className="mdl-menu__item">
+                    Embed Work Link
+                </li>
             </ul>
         </div>
 
-      </div>
+    </div>
+
     );
   }
 });

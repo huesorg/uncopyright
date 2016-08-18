@@ -711,6 +711,9 @@ NAVIGATION STYLES
       .work .mdl-card__actions .mdl-button:hover {
         background: #dccac0;
         color: #fff; }
+  .work .mdl-menu {
+    font-family: "Work Sans", Karla, "Karla", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #caae9f; }
 
 /******************************************************************
 
