@@ -33,12 +33,12 @@ var ListItemWrapper = React.createClass({
                 href={"/projects/" + this.props.data._id}>
                 View Work
             </a>
-            <button id="work--menu" className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+            <button id={"work--menu-" + this.props.data._id} className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
                 <i className="material-icons">more_vert</i>
             </button>
 
             <ul className="mdl-menu mdl-menu--top-right mdl-js-menu mdl-js-ripple-effect"
-            data-mdl-for="work--menu">
+            data-mdl-for={"work--menu-" + this.props.data._id}>
                 <li disabled className="mdl-menu__item">View Creator Profile</li>
                 <li className="mdl-menu__item">Generate Work URL</li>
             </ul>
