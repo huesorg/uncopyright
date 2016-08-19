@@ -5,7 +5,7 @@
 /*
  * Corrects `block` display not defined in IE6/7/8/9 & FF3.
  */
-@import 'https://fonts.googleapis.com/css?family=Work+Sans:700|Yrsa:300';
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Work+Sans:700';
 article,
 aside,
 details,
@@ -499,12 +499,12 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 .theme-font {
-  font-family: "Work Sans", Karla, "Karla", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 .alt-font {
-  font-family: "Yrsa", Cambria, Times New Roman, Times, serif;
-  font-weight: 300; }
+  font-family: "Crimson Text", Cambria, Times New Roman, Times, serif;
+  font-weight: 400; }
 
 .text-left {
   text-align: left; }
@@ -608,7 +608,7 @@ NAVIGATION STYLES
 *********************/
 .mdl-layout__title {
   text-indent: -9999px;
-  background-image: url(../img/nav--uncopyright-logo.png);
+  background-image: url(../images/nav--uncopyright-logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
@@ -627,14 +627,12 @@ NAVIGATION STYLES
     color: #c1784a; }
 
 .mdl-navigation .mdl-navigation__link {
-  font-family: "Work Sans", Karla, "Karla", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: .004em;
   color: #72716d; }
 
-/*********************
-PAGE STYLES
-*********************/
+mdl-navigation
 .content-page {
   border-radius: 4px;
   -moz-border-radius: 4px;
@@ -730,7 +728,7 @@ PAGE STYLES
   .work .mdl-card__title-text {
     color: #72716d; }
     .work .mdl-card__title-text em {
-      font-family: "Yrsa", Cambria, Times New Roman, Times, serif;
+      font-family: "Crimson Text", Cambria, Times New Roman, Times, serif;
       opacity: .7; }
   .work .mdl-card__supporting-text {
     font-size: 16px;
@@ -748,7 +746,7 @@ PAGE STYLES
         background: #dccac0;
         color: #fff; }
   .work .mdl-menu {
-    font-family: "Work Sans", Karla, "Karla", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Work Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #caae9f;
     border-radius: 4px;
     -moz-border-radius: 4px;
@@ -760,8 +758,8 @@ Stylesheet: Typography
 
 ******************************************************************/
 body {
-  font-family: "Yrsa", Cambria, Times New Roman, Times, serif;
-  font-weight: 300;
+  font-family: "Crimson Text", Cambria, Times New Roman, Times, serif;
+  font-weight: 400;
   font-size: 100%;
   line-height: 1.5;
   color: #393431; }
@@ -779,7 +777,7 @@ span.amp, i.amp {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Work Sans", Karla, "Karla", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Work Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #72716d;
   text-rendering: optimizelegibility;
@@ -876,7 +874,7 @@ Stylesheet: Retina Displays
 NAVIGATION STYLES
 *********************/
   .mdl-layout__title {
-    background-image: url(../img/nav--uncopyright-logo@2x.png); } }
+    background-image: url(../images/nav--uncopyright-logo@2x.png); } }
 
 @media print {
   /******************************************************************

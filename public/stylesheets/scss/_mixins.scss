@@ -76,15 +76,15 @@ http://sachagreif.com/sass-color-variables/
 TYPOGRAPHY
 *********************/
 
-@import 'https://fonts.googleapis.com/css?family=Work+Sans:700|Yrsa:300';
+@import 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i|Work+Sans:700';
 
-$sans-serif:        'Work Sans', Karla, "Karla", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             'Yrsa', Cambria, Times New Roman, Times, serif;
-$theme-font: 		    $sans-serif;
+$sans-serif:            'Work Sans', 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif:                 'Crimson Text', Cambria, Times New Roman, Times, serif;
+$theme-font:            $sans-serif;
 $alt-font: 			    $serif;
 
 .theme-font {font-family:$theme-font; font-weight:700}
-.alt-font {font-family:$alt-font; font-weight:300}
+.alt-font {font-family:$alt-font; font-weight:400}
 
 // text alignment
 .text-left   { text-align: left; }
