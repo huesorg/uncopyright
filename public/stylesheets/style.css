@@ -479,7 +479,7 @@ TOOLS
 	box-sizing:         border-box;
 }
 */
-.image-replacement, .mdl-layout__title, .welcome .welcome__content .welcome__title {
+.image-replacement, .mdl-layout__title-wrap .mdl-layout__title, .welcome .welcome__content .welcome__title {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
@@ -580,7 +580,10 @@ body {
   color: #fff; }
 
 a {
+  color: #3293ab;
   cursor: pointer; }
+  a:hover {
+    color: #38a4bf; }
 
 .mobileHide, .show1240 {
   display: none; }
@@ -616,30 +619,83 @@ FOR EXTENDING MDL STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.mdl-layout__title {
-  background-image: url(../images/nav--uncopyright-logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  width: 200px;
-  height: 49px;
-  margin: 14px auto 4px; }
+.mdl-layout__title-wrap {
+  background-color: #3293ab;
+  background: -moz-linear-gradient(-10deg, #3293ab 0%, #267184 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-10deg, #3293ab 0%, #267184 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(170deg, #3293ab 0%, #267184 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='darken($blue,10%)',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  padding: 20px 0; }
+  .mdl-layout__title-wrap .mdl-layout__title {
+    background-image: url(../images/nav--uncopyright-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 200px;
+    height: 47px;
+    margin: 0 auto; }
+
+.mdl-layout__drawer {
+  border: 0;
+  background: #f1f1f1; }
+  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
+    background: #fff; }
 
 .mdl-layout__drawer-button {
-  border: 3px solid #c1784a;
+  border: 4px solid #3293ab;
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   line-height: 54px;
-  background: #fff; }
+  margin: 4px;
+  background: #37a1bb; }
   .mdl-layout__drawer-button i {
-    color: #c1784a; }
+    color: #fff; }
+
+@media only screen and (min-width: 1024px) {
+  .mdl-layout__drawer-button {
+    position: fixed; } }
 
 .mdl-navigation .mdl-navigation__link {
   font-family: "Work Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: .004em;
-  color: #72716d; }
+  letter-spacing: .007em;
+  color: #72716d;
+  font-size: 22px; }
+  .mdl-navigation .mdl-navigation__link i.material-icons {
+    font-size: 30px;
+    width: 40px;
+    margin-top: -4px;
+    text-align: center;
+    height: 40px;
+    color: #3293ab;
+    display: inline-block;
+    border: 4px solid transparent;
+    margin-right: 4px;
+    line-height: 40px;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  .mdl-navigation .mdl-navigation__link:hover {
+    background: rgba(255, 255, 255, 0.1); }
+    .mdl-navigation .mdl-navigation__link:hover i.material-icons {
+      border-color: #3293ab; }
+  .mdl-navigation .mdl-navigation__link:nth-of-type(2) i {
+    color: #c1784a; }
+  .mdl-navigation .mdl-navigation__link:nth-of-type(2):hover i {
+    border-color: #c1784a; }
+  .mdl-navigation .mdl-navigation__link:nth-of-type(3) i {
+    color: #dccac0; }
+  .mdl-navigation .mdl-navigation__link:nth-of-type(3):hover i {
+    border-color: #dccac0; }
 
 /*********************
 BUTTON STYLES
@@ -648,12 +704,13 @@ BUTTON STYLES
   border: 4px solid #3293ab;
   padding: 8px 20px;
   margin: 4px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   background: #37a1bb; }
   .cta-button:hover {
+    color: #fff;
     background: #39a7c3; }
 
 .cta-button--secondary {
@@ -970,7 +1027,7 @@ Stylesheet: Retina Displays
   /*********************
 NAVIGATION STYLES
 *********************/
-  .mdl-layout__title {
+  .mdl-layout__title-wrap .mdl-layout__title {
     background-image: url(../images/nav--uncopyright-logo@2x.png); }
   /*********************
 HOME STYLES
