@@ -47,14 +47,20 @@ $white:             #fff;
 $bones-pink:        #f01d4f;
 $bones-blue:        #1990db;
 
-$primary-color:     #767572;
-$accent-color:      #f07a33;
+/* Uncopyright Colors */
 
+$blue:              #3293ab;
+$dark-blue:         #004f63;
 $tan:               #dccac0;
 $slate:             #72716d;
-$orange:            #f07a33;
+$orange:            #e27c50;
 $yellow:            #daa840;
+$green:             #449651;
 $brown:             #c1784a;
+$dark-brown:        #704420;
+
+$primary-color:     $blue;
+$accent-color:      $brown;
 
 $link-color:        $primary-color;
 $link-hover:        lighten($primary-color, 12%);
