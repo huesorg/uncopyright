@@ -9,8 +9,19 @@ var MasterLayout = React.createClass({
                     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
                     <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css" />
                     <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+
                     <link rel='stylesheet' href='/stylesheets/style.css' />
+
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+                    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+                    <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
+                    <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
+                    <link rel="manifest" href="/images/favicon/manifest.json">
+                    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+                    <link rel="shortcut icon" href="/images/favicon/favicon.ico">
+                    <meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
+                    <meta name="theme-color" content="#ffffff">
                 </head>
                 <body>
                     <div className="mdl-layout mdl-js-layout">

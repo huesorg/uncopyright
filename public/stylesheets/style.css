@@ -489,6 +489,7 @@ COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
+/* Uncopyright Colors */
 /*
 Here's a great tutorial on how to
 use color variables properly:
@@ -571,11 +572,11 @@ body {
   background-repeat: no-repeat; }
 
 ::selection {
-  background: #f7b892;
+  background: #dbb196;
   color: #fff; }
 
 ::-moz-selection {
-  background: #f7b892;
+  background: #dbb196;
   color: #fff; }
 
 a {
@@ -647,10 +648,10 @@ PAGE STYLES
   position: fixed;
   bottom: 2%;
   right: 2%;
-  background: #f07a33 !important;
+  background: #c1784a !important;
   color: #fff; }
   .typeform-share:hover {
-    background: #f2894b; }
+    background: #c8865d; }
 
 .work {
   display: -webkit-box;
@@ -852,7 +853,7 @@ Stylesheet: Big Tablets, Small Laptops
 
 ******************************************************************/
   .mdl-layout__header {
-    background-color: #767572; }
+    background-color: #3293ab; }
     .mdl-layout__header .mdl-navigation__link {
       color: #fff; } }
 
