@@ -14,6 +14,17 @@ var MasterLayout = React.createClass({
                 </head>
                 <body>
                     <div className="mdl-layout mdl-js-layout">
+                        <header className="mdl-layout__header mdl-layout__header--scroll">
+                            <div className="mdl-layout__header-row">
+                              <span className="mdl-layout-title">Uncopyright Movement</span>
+                              <div className="mdl-layout-spacer"></div>
+                              <nav className="mdl-navigation">
+                                <a className="mdl-navigation__link" href="">Why?</a>
+                                <a className="mdl-navigation__link" href="">Why not?</a>
+                                <a className="mdl-navigation__link" href="">Contribute</a>
+                              </nav>
+                            </div>
+                        </header>
 
                         <div className="mdl-layout__drawer">
                             <span className="mdl-layout__title">Uncopyright Movement</span>

@@ -5,3 +5,11 @@ Stylesheet: Big Tablets, Small Laptops
 12 Columns with MDL
 
 ******************************************************************/
+
+.mdl-layout__header {
+	background-color:$primary-color;
+
+	.mdl-navigation__link {
+		color:#fff;
+	}
+}
