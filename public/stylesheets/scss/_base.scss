@@ -30,7 +30,14 @@ body {
 	color:#fff;
 }
 
-a {cursor:pointer;}
+a {
+	color:$primary-color;
+	cursor:pointer;
+
+	&:hover {
+		color:lighten($primary-color,5%);
+	}
+}
 
 .mobileHide, .show1240 {
 	display:none;
@@ -71,32 +78,92 @@ FOR EXTENDING MDL STYLES
 NAVIGATION STYLES
 *********************/
 
-.mdl-layout__title {
-	@extend .image-replacement;
-	background-image:url(../images/nav--uncopyright-logo.png);
-	background-size:contain;
-	background-repeat:no-repeat;
-	display:block;
-	width:200px;
-	height:49px;
-	margin:14px auto 4px;
-}
-.mdl-layout__drawer-button {
-	border:3px solid $brown;
-	@include rounded(100%);
-	line-height:54px;
-	background:#fff;
-	i {
-		color:$brown;
+.mdl-layout__title-wrap {
+	background-color:$blue;
+	background: -moz-linear-gradient(-10deg,  $blue 0%, darken($blue,10%) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-10deg,  $blue 0%,darken($blue,10%) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(170deg,  $blue 0%,darken($blue,10%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='darken($blue,10%)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding:20px 0;
+
+	.mdl-layout__title {
+		@extend .image-replacement;
+		background-image:url(../images/nav--uncopyright-logo.png);
+		background-size:contain;
+		background-repeat:no-repeat;
+		display:block;
+		width:200px;
+		height:47px;
+		margin:0 auto;
 	}
 }
+
+.mdl-layout__drawer {
+	border:0;
+	background:#f1f1f1;
+
+	.mdl-navigation .mdl-navigation__link:hover {
+		background:#fff;
+	}
+}
+
+.mdl-layout__drawer-button {
+	border:4px solid $blue;
+	@include rounded(100%);
+	line-height:54px;
+	margin:4px;
+	background:lighten($blue,4%);
+
+	i {
+		color:#fff;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.mdl-layout__drawer-button {position:fixed}
+} // end of media query
 
 .mdl-navigation {
 	.mdl-navigation__link {
 		font-family:$theme-font;
-		text-transform: uppercase;
-		letter-spacing:.004em;
+		letter-spacing:.007em;
 		color:$slate;
+		font-size:22px;
+
+		i.material-icons {
+			font-size: 30px;
+			width: 40px;
+			margin-top:-4px;
+			text-align: center;
+			height: 40px;
+			color:$blue;
+			display: inline-block;
+			border: 4px solid transparent;
+			margin-right: 4px;
+			line-height: 40px;
+			@include rounded(100px);
+			@include transition(all .4s ease-in-out);
+		}
+
+		&:hover {
+			background:rgba(255,255,255,.1);
+
+			i.material-icons {
+				border-color:$blue;
+			}
+		}
+
+		&:nth-of-type(2){
+			i {color:$brown;}
+
+			&:hover {i {border-color:$brown}}
+		}
+
+		&:nth-of-type(3){
+			i {color:$tan;}
+
+			&:hover {i {border-color:$tan}}
+		}
 	}
 }
 
@@ -108,12 +175,13 @@ BUTTON STYLES
 	border:4px solid $primary-color;
 	padding:8px 20px;
 	margin:4px;
-	color:#fff;
+	color:rgba(255,255,255,.9);
 	@include rounded(4px);
 	background:lighten($primary-color,4%);
 
 	&:hover {
 		@extend .mdl-shadow-4dp;
+		color:#fff;
 		background:lighten($primary-color,6%);
 	}
 }
