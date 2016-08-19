@@ -82,10 +82,13 @@ NAVIGATION STYLES
 	}
 }
 
-.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
-	font-family:$theme-font;
-	text-transform: uppercase;
-	color:$slate;
+.mdl-navigation {
+	.mdl-navigation__link {
+		font-family:$theme-font;
+		text-transform: uppercase;
+		letter-spacing:.004em;
+		color:$slate;
+	}
 }
 
 /*********************

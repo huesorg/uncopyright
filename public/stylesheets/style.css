@@ -626,9 +626,10 @@ NAVIGATION STYLES
   .mdl-layout__drawer-button i {
     color: #c1784a; }
 
-.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+.mdl-navigation .mdl-navigation__link {
   font-family: "Work Sans", Karla, "Karla", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
+  letter-spacing: .004em;
   color: #72716d; }
 
 /*********************
@@ -850,7 +851,11 @@ Stylesheet: Big Tablets, Small Laptops
 
 12 Columns with MDL
 
-******************************************************************/ }
+******************************************************************/
+  .mdl-layout__header {
+    background-color: #767572; }
+    .mdl-layout__header .mdl-navigation__link {
+      color: #fff; } }
 
 @media only screen and (min-width: 1280px) {
   /******************************************************************
