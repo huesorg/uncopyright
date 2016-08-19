@@ -75,3 +75,14 @@ p {
 	letter-spacing:-.004em;
 	margin-top:21px;
 }
+
+@media only screen and (min-width: 840px) {
+
+	p {
+		font-size:21px;
+		line-height:1.57;
+		letter-spacing:-.003em;
+		margin-top:29px;
+	}
+
+} // end of media query
