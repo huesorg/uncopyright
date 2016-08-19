@@ -5,3 +5,25 @@ Stylesheet: Small Tablets
 6 Columns with MDL
 
 ******************************************************************/
+
+
+/*********************
+HOME STYLES
+*********************/
+
+.welcome {
+	padding:100px 20px 20px;
+
+	.welcome__content {
+
+		.welcome__title {
+			height:122px;
+			max-width:500px;
+
+		}
+		.welcome__message {
+			max-width:520px;
+			margin:60px auto 60px;
+		}
+	}
+}
