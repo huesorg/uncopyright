@@ -556,6 +556,20 @@ Loaded on all devices
 /*********************
 GENERAL STYLES
 *********************/
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dccac0+0,ffffff+75 */
+  background: #dccac0;
+  /* Old browsers */
+  background: -moz-linear-gradient(-10deg, #dccac0 0%, #ffffff 75%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-10deg, #dccac0 0%, #ffffff 75%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(170deg, #dccac0 0%, #ffffff 75%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dccac0', endColorstr='#ffffff',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat; }
+
 ::selection {
   background: #f7b892;
   color: #fff; }
@@ -615,6 +629,15 @@ NAVIGATION STYLES
   font-family: "Work Sans", Karla, "Karla", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #72716d; }
+
+/*********************
+PAGE STYLES
+*********************/
+.content-page {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 4% 8%; }
 
 /*********************
 /PROJECTS STYLES
@@ -787,6 +810,12 @@ h5, .h5 {
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px; }
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -.004em;
+  margin-top: 21px; }
 
 @media only screen and (min-width: 480px) {
   /******************************************************************
