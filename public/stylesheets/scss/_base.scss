@@ -264,11 +264,16 @@ PAGE STYLES
 	position:fixed;
 	bottom:2%;
 	right:2%;
-	background:$accent-color !important;
-	color:#fff;
+	background:$orange;
+	@include css-gradient(lighten($orange,5%), $orange);
+	border:4px solid $orange;
+	z-index:99999;
+	color:rgba(255,255,255,.8);
 
 	&:hover {
-		background:lighten($accent-color,5%);
+		background:lighten($orange,5%);
+		color:#fff;
+		@extend .mdl-shadow-4dp;
 	}
 }
 
@@ -283,6 +288,7 @@ PAGE STYLES
   	flex-flow: row wrap;
 	-webkit-align-content: space-between;
  	align-content: space-between;
+	@include rounded(4px);
 
 	.mdl-card__media {
 		background:$tan;
