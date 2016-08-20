@@ -43,6 +43,10 @@ a {
 	display:none;
 }
 
+.button, .mdl-button, .cta-button {
+	font-family:$theme-font;
+}
+
 .youtube {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
