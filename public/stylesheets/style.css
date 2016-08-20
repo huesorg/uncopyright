@@ -612,11 +612,10 @@ a {
 /*********************
 FOR EXTENDING MDL STYLES
 *********************/
-.mdl-shadow-4dp, .cta-button:hover, .typeform-share:hover {
+.mdl-shadow-4dp, .cta-button:hover, .typeform-share:hover, .work:hover {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
 
-.mdl-button-raised, .cta-button--secondary:hover {
-  background: rgba(158, 158, 158, 0.2);
+.mdl-button-raised, .cta-button--secondary:hover, .work {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
 /*********************
@@ -644,7 +643,11 @@ NAVIGATION STYLES
 
 .mdl-layout__drawer {
   border: 0;
-  background: #f1f1f1; }
+  background-color: #f1f1f1;
+  background-image: url(../images/icon-pattern.png);
+  background-repeat: repeat;
+  background-size: 400px 100px;
+  background-position: center -75px; }
   .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
     background: #fff; }
 
@@ -677,7 +680,7 @@ NAVIGATION STYLES
     color: #3293ab;
     display: inline-block;
     border: 4px solid transparent;
-    margin-right: 4px;
+    margin-right: 6px;
     line-height: 40px;
     border-radius: 100px;
     -moz-border-radius: 100px;
@@ -803,7 +806,12 @@ PAGE STYLES
   align-content: space-between;
   border-radius: 4px;
   -moz-border-radius: 4px;
-  -webkit-border-radius: 4px; }
+  -webkit-border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
   .work .mdl-card__media {
     background: #dccac0;
     border: 4px solid #dccac0;
