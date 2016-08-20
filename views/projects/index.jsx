@@ -1,5 +1,6 @@
 var React = require('react');
 var MasterLayout = require('../master');
+import { Button, Card, ToolTip, Menu } from 'react-mdl';
 import Gravatar from 'react-gravatar';
 
 
@@ -58,10 +59,19 @@ var ProjectListComponent = React.createClass({
     return (
       <MasterLayout name={ this.props.name }>
 
-        <a href="https://hues.typeform.com/to/ahz9lb" data-mode="2" target="_blank"
-            className="typeform-share link mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab" >
+        <a href="https://hues.typeform.com/to/ahz9lb" id="typeform-submit-tooltip" data-mode="2" target="_blank"
+            className="
+                typeform-share
+                link mdl-button
+                mdl-js-ripple-effect mdl-js-button
+                mdl-button--fab
+                mdl-tooltip--left
+            " >
             <i className="material-icons">add</i>
         </a>
+        <span className="mdl-tooltip" for="typeform-submit-tooltip">
+            Submit your work to the<br/> Uncopyright Movement
+        </span>
 
         <div className="mdl-grid wrap">
             {this.props.projects.map(function(project) {
