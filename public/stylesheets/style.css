@@ -588,6 +588,9 @@ a {
 .mobileHide, .show1240 {
   display: none; }
 
+.button, .mdl-button, .cta-button {
+  font-family: "Work Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .youtube {
   position: relative;
   padding-bottom: 56.25%;
