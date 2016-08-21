@@ -35,7 +35,7 @@ var IndexComponent = React.createClass({
                             Welcome to { this.props.name }
                         </h1>
                         <p className="welcome__message">
-                            All <span>{ this.props.projectCount }</span> works you find here have been uncopyrighted <span>by their creator(s)</span> and gifted to the commons.
+                            All <div>{ this.props.projectCount }</div> works you find here have been uncopyrighted <div>by their creator(s)</div> and gifted to the commons.
                         </p>
                         <a
                             className="mdl-button cta-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
@@ -58,33 +58,332 @@ var IndexComponent = React.createClass({
                     </div>
                     <div className="mdl-tabs__panel is-active" id="facts">
                         <ul className="why-list why-list--facts">
-                            <li className="packery-item">Copyright is automatic. Uncopyright is a choice.</li>
-                            <li className="packery-item">The {this.props.projectCount} works here are only a small portion of uncopyrighted work in the world.</li>
-                            <li className="packery-item">We hope, throught this project, to create a movement of creatives who are gifting their work to the commons.</li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        lock_open
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Copyright is automatic. Uncopyright is a choice.
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        extension
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    The {this.props.projectCount} works here are only a small portion of uncopyrighted work in the world.
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        language
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    The goal of this project is to create a global movement of creatives who are gifting their work to the commons.
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div className="mdl-tabs__panel" id="hopes">
                         <ul className="why-list why-list--hopes">
-                            <li className="packery-item">Palpatine grodin monkey-lizard cb-99 endocott rattataki sebulba.</li>
-                            <li className="packery-item">Ka kendal sy fett roos nikto iv. </li>
-                            <li className="packery-item">Draethos dorvalla codru-ji moff oppo. Boss veila dorvalla tsavong triclops dor sesswenna bail tharen. </li>
-                            <li className="packery-item">Maris cognus sulorine lando. </li>
-                            <li className="packery-item">a kendal sy fett roos nikto iv. Draethos dorvalla codru-ji moff oppo. </li>
-                            <li className="packery-item">Jek mon trianii dormé givin drach'nam mustafar lowbacca darth.</li>
-                            <li className="packery-item">Dat leia naberrie ahsoka. Briqualon roonan nadon zann hapes gunray orrin daala. </li>
-                            <li className="packery-item">Nilgaard fett momaw bren taung auril. Jek mon trianii dormé givin drach'nam mustafar lowbacca darth. Skywalker klivian boltrunians fel massa watto. </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Palpatine grodin monkey-lizard cb-99 endocott rattataki sebulba.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Ka kendal sy fett roos nikto iv.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Draethos dorvalla codru-ji moff oppo. Boss veila dorvalla tsavong triclops dor sesswenna bail tharen.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Maris cognus sulorine lando.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    a kendal sy fett roos nikto iv. Draethos dorvalla codru-ji moff oppo.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Jek mon trianii dormé givin drach'nam mustafar lowbacca darth.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Dat leia naberrie ahsoka. Briqualon roonan nadon zann hapes gunray orrin daala.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Nilgaard fett momaw bren taung auril. Jek mon trianii dormé givin drach'nam mustafar lowbacca darth. Skywalker klivian boltrunians fel massa watto.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div className="mdl-tabs__panel" id="fears">
                         <ul className="why-list why-list--fears">
-                            <li className="packery-item">a kendal sy fett roos nikto iv. Draethos dorvalla codru-ji moff oppo. </li>
-                            <li className="packery-item">Nilgaard fett momaw bren taung auril. Jek mon trianii dormé givin drach'nam mustafar lowbacca darth. Skywalker klivian boltrunians fel massa watto. </li>
-                            <li className="packery-item">Ka kendal sy fett roos nikto iv. </li>
-                            <li className="packery-item">Draethos dorvalla codru-ji moff oppo. Boss veila dorvalla tsavong triclops dor sesswenna bail tharen. </li>
-                            <li className="packery-item">Maris cognus sulorine lando. </li>
-                            <li className="packery-item">Palpatine grodin monkey-lizard cb-99 endocott rattataki sebulba.</li>
-                            <li className="packery-item">Jek mon trianii dormé givin drach'nam mustafar lowbacca darth.</li>
-                            <li className="packery-item">Dat leia naberrie ahsoka. Briqualon roonan nadon zann hapes gunray orrin daala. </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Ka kendal sy fett roos nikto iv.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Palpatine grodin monkey-lizard cb-99 endocott rattataki sebulba.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Draethos dorvalla codru-ji moff oppo. Boss veila dorvalla tsavong triclops dor sesswenna bail tharen.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    a kendal sy fett roos nikto iv. Draethos dorvalla codru-ji moff oppo.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Jek mon trianii dormé givin drach'nam mustafar lowbacca darth.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Maris cognus sulorine lando.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Dat leia naberrie ahsoka. Briqualon roonan nadon zann hapes gunray orrin daala.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        tag_faces
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Nilgaard fett momaw bren taung auril. Jek mon trianii dormé givin drach'nam mustafar lowbacca darth. Skywalker klivian boltrunians fel massa watto.
+                                </div>
+                                <div className="why-list__actions">
+                                    <a className="mdl-js-ripple-effect">
+                                        Source Name
+                                    </a>
+                                    <button className="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--icon">
+                                        <i className="material-icons">more_vert</i>
+                                    </button>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
