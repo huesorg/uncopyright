@@ -615,7 +615,7 @@ FOR EXTENDING MDL STYLES
 .mdl-shadow-4dp, .cta-button:hover, .typeform-share:hover, .work:hover {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
 
-.mdl-button-raised, .cta-button--secondary:hover, .work {
+.mdl-button-raised, .cta-button--secondary:hover, .why-list li:hover, .work {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
 
 /*********************
@@ -762,6 +762,44 @@ HOME STYLES
       -webkit-border-radius: 4px;
       padding: 0 12px;
       font-size: 24px; }
+
+.mdl-tabs--home {
+  margin-top: 80px; }
+  .mdl-tabs--home .mdl-tabs__tab {
+    font-family: "Work Sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #dccac0;
+    font-size: 16px;
+    text-transform: none; }
+  .mdl-tabs--home.is-upgraded .mdl-tabs__tab.is-active {
+    color: #72716d; }
+    .mdl-tabs--home.is-upgraded .mdl-tabs__tab.is-active:after {
+      background-color: #c1784a; }
+
+.why-list {
+  margin: 0; }
+  .why-list li {
+    width: 50%;
+    font-size: 24px;
+    line-height: 1.3;
+    font-family: "Crimson Text", Cambria, Times New Roman, Times, serif;
+    color: #72716d;
+    padding: 20px;
+    float: left;
+    display: block;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .why-list li:hover {
+      background: #fff;
+      color: #393431; }
+
+.mdl-tabs__panel.is-active {
+  padding: 4%; }
 
 /*********************
 PAGE STYLES
@@ -1001,7 +1039,13 @@ HOME STYLES
       max-width: 500px; }
     .welcome .welcome__content .welcome__message {
       max-width: 520px;
-      margin: 60px auto 60px; } }
+      margin: 60px auto 60px; }
+  .why-list {
+    padding: 4%; }
+    .why-list li {
+      width: 33.3333%;
+      font-size: 24px;
+      padding: 20px; } }
 
 @media only screen and (min-width: 840px) {
   /******************************************************************
