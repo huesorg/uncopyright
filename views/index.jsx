@@ -65,7 +65,7 @@ var IndexComponent = React.createClass({
                                     </i>
                                 </div>
                                 <div className="why-list__text">
-                                    The goal of this project is to create a global movement of creatives who are gifting their work to the commons.
+                                    The goal of this project is to create a global movement of creators who are gifting their work to the commons.
                                 </div>
                             </li>
                             <li className="packery-item">
@@ -131,7 +131,7 @@ var IndexComponent = React.createClass({
                     <div className="mdl-tabs__panel" id="hopes">
                         <ul className="why-list why-list--hopes">
                             <h2>
-                                Here's what <span>creatives hope to accomplish</span> by uncopyrighting their work
+                                Here's what <span>creators hope to accomplish</span> by uncopyrighting their work
                             </h2>
                             <li className="packery-item">
                                 <div className="why-list__icon">
@@ -289,7 +289,7 @@ var IndexComponent = React.createClass({
                     <div className="mdl-tabs__panel" id="fears">
                         <ul className="why-list why-list--fears">
                             <h2>
-                                Here's what <span>creatives fear</span> in uncopyrighting their work
+                                Here's what <span>creators fear</span> in uncopyrighting their work
                             </h2>
                             <li className="packery-item">
                                 <div className="why-list__icon">
