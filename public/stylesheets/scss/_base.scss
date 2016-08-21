@@ -261,6 +261,10 @@ HOME STYLES
 		text-transform:none;
 	}
 
+	.mdl-tabs__tab-bar {
+		border:none;
+	}
+
 	&.is-upgraded {
 		.mdl-tabs__tab.is-active {
 
@@ -270,22 +274,47 @@ HOME STYLES
 				background-color:$brown;
 			}
 		}
+
+		.mdl-tabs__tab.mdl-tabs__tab--facts.is-active {
+			color:$blue;
+
+			&:after {height:4px; background-color:$blue;}
+		}
+
+		.mdl-tabs__tab.mdl-tabs__tab--hopes.is-active {
+			color:$green;
+
+			&:after {height:4px; background-color:$green;}
+		}
+
+		.mdl-tabs__tab.mdl-tabs__tab--fears.is-active {
+			color:$orange;
+
+			&:after {height:4px; background-color:$orange;}
+		}
 	}
+
+	.mdl-tabs__panel#facts {background-color:$blue;}
+	.mdl-tabs__panel#hopes {background-color:$green;}
+	.mdl-tabs__panel#fears {background-color:$orange;}
 }
 
 .why-list {
+	text-align:center;
 	margin:0;
 
 	li {
-		width:50%;
+		max-width:44%;
+		margin:3%;
 		font-size:24px;
 		line-height:1.3;
 		font-family:$alt-font;
-		color:$slate;
-		padding:20px;
-		float:left;
-		display:block;
+		color:rgba(255,255,255,.7);
+		padding:30px 20px;
+		display:inline-block;
+		vertical-align: middle;
 		@include rounded(4px);
+		@include box-sizing(border-box);
 		@include transition(all .2s ease-in-out);
 
 		&:hover {
@@ -300,6 +329,10 @@ HOME STYLES
 
 .mdl-tabs__panel.is-active {
 	padding:4%;
+	background-image:url(../images/icon-pattern--white--10.png);
+	background-repeat:repeat;
+	background-size:400px 100px;
+	background-position:center -75px;
 }
 
 /*********************

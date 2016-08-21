@@ -52,23 +52,19 @@ var IndexComponent = React.createClass({
                 </div>
                 <div className="mdl-tabs mdl-tabs--home mdl-js-tabs mdl-js-ripple-effect">
                     <div className="mdl-tabs__tab-bar">
-                        <a href="#facts" className="mdl-tabs__tab is-active">Quick Facts</a>
-                        <a href="#hopes" className="mdl-tabs__tab">Why?</a>
-                        <a href="#fears" className="mdl-tabs__tab">Why Not?</a>
+                        <a href="#facts" className="mdl-tabs__tab mdl-tabs__tab--facts is-active">Quick Facts</a>
+                        <a href="#hopes" className="mdl-tabs__tab mdl-tabs__tab--hopes">Why?</a>
+                        <a href="#fears" className="mdl-tabs__tab mdl-tabs__tab--fears">Why Not?</a>
                     </div>
                     <div className="mdl-tabs__panel is-active" id="facts">
-                        <ul className="why-list why-list--facts"
-                            data-packery='{ "itemSelector": ".packery-item", "gutter": 10 }'
-                        >
+                        <ul className="why-list why-list--facts">
                             <li className="packery-item">Copyright is automatic. Uncopyright is a choice.</li>
                             <li className="packery-item">The {this.props.projectCount} works here are only a small portion of uncopyrighted work in the world.</li>
                             <li className="packery-item">We hope, throught this project, to create a movement of creatives who are gifting their work to the commons.</li>
                         </ul>
                     </div>
                     <div className="mdl-tabs__panel" id="hopes">
-                        <ul className="why-list why-list--hopes"
-                            data-packery='{ "itemSelector": ".packery-item", "gutter": 10 }'
-                        >
+                        <ul className="why-list why-list--hopes">
                             <li className="packery-item">Palpatine grodin monkey-lizard cb-99 endocott rattataki sebulba.</li>
                             <li className="packery-item">Ka kendal sy fett roos nikto iv. </li>
                             <li className="packery-item">Draethos dorvalla codru-ji moff oppo. Boss veila dorvalla tsavong triclops dor sesswenna bail tharen. </li>
@@ -80,9 +76,7 @@ var IndexComponent = React.createClass({
                         </ul>
                     </div>
                     <div className="mdl-tabs__panel" id="fears">
-                        <ul className="why-list why-list--fears"
-                            data-packery='{ "itemSelector": ".packery-item", "gutter": 10 }'
-                        >
+                        <ul className="why-list why-list--fears">
                             <li className="packery-item">a kendal sy fett roos nikto iv. Draethos dorvalla codru-ji moff oppo. </li>
                             <li className="packery-item">Nilgaard fett momaw bren taung auril. Jek mon trianii dormé givin drach'nam mustafar lowbacca darth. Skywalker klivian boltrunians fel massa watto. </li>
                             <li className="packery-item">Ka kendal sy fett roos nikto iv. </li>
