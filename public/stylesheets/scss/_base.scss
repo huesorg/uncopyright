@@ -326,6 +326,27 @@ HOME STYLES
 	background-size:400px 100px;
 	background-position:center -75px;
 
+	h2 {
+		font-size:36px;
+		line-height:1.4;
+		color:rgba(255,255,255,.6);
+		max-width:90%;
+		font-weight:400;
+		font-family:$alt-font;
+		margin:40px auto 10px;
+
+		span {
+			font-family:$theme-font;
+			display:inline-block;
+			line-height:40px;
+			border:4px solid #fff;
+			color:#fff;
+			@include rounded(4px);
+			padding:0 12px;
+			font-size:24px;
+		}
+	}
+
 	li {
 		margin:1% 3%;
 		font-size:24px;
@@ -403,6 +424,11 @@ HOME STYLES
 	&.why-list--fears li:hover {
 		color:$orange;
 		.why-list__icon i{border-color:lighten($orange,7%)}
+	}
+
+	.why-list--cta {
+		@extend .clearfix;
+		margin:80px auto;
 	}
 }
 /*********************
