@@ -461,12 +461,12 @@ dd {
 /*********************
 CLEARFIXIN'
 *********************/
-.clearfix {
+.clearfix, .why-list .why-list--cta {
   zoom: 1; }
-  .clearfix:before, .clearfix:after {
+  .clearfix:before, .why-list .why-list--cta:before, .clearfix:after, .why-list .why-list--cta:after {
     content: "";
     display: table; }
-  .clearfix:after {
+  .clearfix:after, .why-list .why-list--cta:after {
     clear: both; }
 
 /*********************
@@ -898,6 +898,8 @@ HOME STYLES
     color: #e27c50; }
     .why-list.why-list--fears li:hover .why-list__icon i {
       border-color: #e7936f; }
+  .why-list .why-list--cta {
+    margin: 80px auto; }
 
 /*********************
 PAGE STYLES
