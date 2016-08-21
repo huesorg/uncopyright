@@ -382,6 +382,13 @@ HOME STYLES
 				border:4px solid rgba(255,255,255,.7);
 				@include rounded(100%);
 			}
+
+			img {
+				width:90px;
+				height:90px;
+				border:4px solid rgba(255,255,255,.7);
+				@include rounded(100%);
+			}
 		}
 
 		.why-list__text {
@@ -418,12 +425,12 @@ HOME STYLES
 
 	&.why-list--hopes li:hover {
 		color:$green;
-		.why-list__icon i{border-color:lighten($green,7%)}
+		.why-list__icon img{border-color:lighten($green,7%)}
 	}
 
 	&.why-list--fears li:hover {
 		color:$orange;
-		.why-list__icon i{border-color:lighten($orange,7%)}
+		.why-list__icon img{border-color:lighten($orange,7%)}
 	}
 
 	.why-list--cta {
