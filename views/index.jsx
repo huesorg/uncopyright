@@ -35,7 +35,7 @@ var IndexComponent = React.createClass({
                             Welcome to { this.props.name }
                         </h1>
                         <p className="welcome__message">
-                            All <div>{ this.props.projectCount }</div> works you find here have been uncopyrighted <div>by their creator(s)</div> and gifted to the commons.
+                            All <span>{ this.props.projectCount }</span> works you find here have been uncopyrighted <span>by their creator(s)</span> and gifted to the commons.
                         </p>
                         <a
                             className="mdl-button cta-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
