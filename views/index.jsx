@@ -61,6 +61,16 @@ var IndexComponent = React.createClass({
                             <li className="packery-item">
                                 <div className="why-list__icon">
                                     <i className="material-icons">
+                                        language
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    The goal of this project is to create a global movement of creatives who are gifting their work to the commons.
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
                                         lock_open
                                     </i>
                                 </div>
@@ -81,13 +91,41 @@ var IndexComponent = React.createClass({
                             <li className="packery-item">
                                 <div className="why-list__icon">
                                     <i className="material-icons">
-                                        language
+                                        grid_off
                                     </i>
                                 </div>
                                 <div className="why-list__text">
-                                    The goal of this project is to create a global movement of creatives who are gifting their work to the commons.
+                                    You don't have to submit work here to uncopyright it. Just mark your work "uncopyright".
                                 </div>
                             </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        recent_actors
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    Submit work to help others find it, and to connect it to you as a creator.
+                                </div>
+                            </li>
+                            <li className="packery-item">
+                                <div className="why-list__icon">
+                                    <i className="material-icons">
+                                        money_off
+                                    </i>
+                                </div>
+                                <div className="why-list__text">
+                                    This project is free, unmonetized, open source, and (obviously?) uncopyrighted.
+                                </div>
+                            </li>
+
+                            <div className="why-list--cta">
+                                <a
+                                    className="mdl-button cta-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                                    href="https://hues.typeform.com/to/ahz9lb">
+                                    Submit a Work
+                                </a>
+                            </div>
                         </ul>
                     </div>
                     <div className="mdl-tabs__panel" id="hopes">
@@ -236,6 +274,13 @@ var IndexComponent = React.createClass({
                                     </button>
                                 </div>
                             </li>
+                            <div className="why-list--cta">
+                                <a
+                                    className="mdl-button cta-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                                    href="https://hues.typeform.com/to/ahz9lb">
+                                    Submit a Work
+                                </a>
+                            </div>
                         </ul>
                     </div>
                     <div className="mdl-tabs__panel" id="fears">
@@ -384,6 +429,13 @@ var IndexComponent = React.createClass({
                                     </button>
                                 </div>
                             </li>
+                            <div className="why-list--cta">
+                                <a
+                                    className="mdl-button cta-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
+                                    href="https://hues.typeform.com/to/ahz9lb">
+                                    Submit a Work
+                                </a>
+                            </div>
                         </ul>
                     </div>
                 </div>

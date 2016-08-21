@@ -404,6 +404,11 @@ HOME STYLES
 		color:$orange;
 		.why-list__icon i{border-color:lighten($orange,7%)}
 	}
+
+	.why-list--cta {
+		@extend .clearfix;
+		margin:80px auto;
+	}
 }
 /*********************
 PAGE STYLES
