@@ -876,13 +876,20 @@ HOME STYLES
       .why-list li:hover .why-list__icon, .why-list li:hover .why-list__actions {
         opacity: 1; }
     .why-list li .why-list__icon {
-      opacity: 0;
+      opacity: .3;
       overflow: hidden;
       text-align: center;
       margin: 20px auto 0; }
       .why-list li .why-list__icon i {
         font-size: 50px;
         padding: 20px;
+        border: 4px solid rgba(255, 255, 255, 0.7);
+        border-radius: 100%;
+        -moz-border-radius: 100%;
+        -webkit-border-radius: 100%; }
+      .why-list li .why-list__icon img {
+        width: 90px;
+        height: 90px;
         border: 4px solid rgba(255, 255, 255, 0.7);
         border-radius: 100%;
         -moz-border-radius: 100%;
@@ -911,11 +918,11 @@ HOME STYLES
       border-color: #3baac6; }
   .why-list.why-list--hopes li:hover {
     color: #449651; }
-    .why-list.why-list--hopes li:hover .why-list__icon i {
+    .why-list.why-list--hopes li:hover .why-list__icon img {
       border-color: #4faf5e; }
   .why-list.why-list--fears li:hover {
     color: #e27c50; }
-    .why-list.why-list--fears li:hover .why-list__icon i {
+    .why-list.why-list--fears li:hover .why-list__icon img {
       border-color: #e7936f; }
   .why-list .why-list--cta {
     margin: 80px auto; }

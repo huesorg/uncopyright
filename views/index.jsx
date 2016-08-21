@@ -135,9 +135,7 @@ var IndexComponent = React.createClass({
                             </h2>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Palpatine grodin monkey-lizard cb-99 endocott rattataki sebulba.
@@ -153,9 +151,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Ka kendal sy fett roos nikto iv.
@@ -171,9 +167,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Draethos dorvalla codru-ji moff oppo. Boss veila dorvalla tsavong triclops dor sesswenna bail tharen.
@@ -189,9 +183,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Maris cognus sulorine lando.
@@ -207,9 +199,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     a kendal sy fett roos nikto iv. Draethos dorvalla codru-ji moff oppo.
@@ -225,9 +215,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Jek mon trianii dormé givin drach'nam mustafar lowbacca darth.
@@ -243,9 +231,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Dat leia naberrie ahsoka. Briqualon roonan nadon zann hapes gunray orrin daala.
@@ -261,9 +247,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Nilgaard fett momaw bren taung auril. Jek mon trianii dormé givin drach'nam mustafar lowbacca darth. Skywalker klivian boltrunians fel massa watto.
@@ -293,9 +277,7 @@ var IndexComponent = React.createClass({
                             </h2>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Ka kendal sy fett roos nikto iv.
@@ -311,9 +293,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Palpatine grodin monkey-lizard cb-99 endocott rattataki sebulba.
@@ -329,9 +309,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Draethos dorvalla codru-ji moff oppo. Boss veila dorvalla tsavong triclops dor sesswenna bail tharen.
@@ -347,9 +325,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     a kendal sy fett roos nikto iv. Draethos dorvalla codru-ji moff oppo.
@@ -365,9 +341,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Jek mon trianii dormé givin drach'nam mustafar lowbacca darth.
@@ -383,9 +357,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Maris cognus sulorine lando.
@@ -401,9 +373,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Dat leia naberrie ahsoka. Briqualon roonan nadon zann hapes gunray orrin daala.
@@ -419,9 +389,7 @@ var IndexComponent = React.createClass({
                             </li>
                             <li className="packery-item">
                                 <div className="why-list__icon">
-                                    <i className="material-icons">
-                                        tag_faces
-                                    </i>
+                                    <img alt="Gravatar for bhoward4@gov.uk" src="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=200" srcset="https://secure.gravatar.com/avatar/a0f53e7ec3304822c88223239d86580d?d=retro&amp;r=g&amp;s=400 2x" height="200" width="200" class="react-gravatar profile-image"/>
                                 </div>
                                 <div className="why-list__text">
                                     Nilgaard fett momaw bren taung auril. Jek mon trianii dormé givin drach'nam mustafar lowbacca darth. Skywalker klivian boltrunians fel massa watto.
