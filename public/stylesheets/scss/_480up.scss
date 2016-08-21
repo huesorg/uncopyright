@@ -5,3 +5,14 @@ Stylesheet: Big Phones / Phablets
 Still 4 Columns with MDL
 
 ******************************************************************/
+
+.mdl-tabs--home {
+	.mdl-tabs__tab {
+		font-size:22px;
+	}
+}
+.why-list {
+	li {
+		max-width:44%;
+	}
+}

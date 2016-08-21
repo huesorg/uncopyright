@@ -294,17 +294,39 @@ HOME STYLES
 		}
 	}
 
-	.mdl-tabs__panel#facts {background-color:$blue;}
-	.mdl-tabs__panel#hopes {background-color:$green;}
-	.mdl-tabs__panel#fears {background-color:$orange;}
+	.mdl-tabs__panel#facts {
+		background-color:$blue;
+		background: -moz-linear-gradient(-10deg,  $blue 0%, lighten($blue,10%) 75%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-10deg,  $blue 0%,lighten($blue,10%) 75%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(170deg,  $blue 0%,lighten($blue,10%) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera10+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$blue', endColorstr='lighten($blue,10%)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	.mdl-tabs__panel#hopes {
+		background-color:$green;
+		background: -moz-linear-gradient(-10deg,  $green 0%, lighten($green,10%) 75%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-10deg,  $green 0%,lighten($green,10%) 75%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(170deg,  $green 0%,lighten($green,10%) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera10+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$green', endColorstr='lighten($green,10%)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+	.mdl-tabs__panel#fears {
+		background-color:$orange;
+		background: -moz-linear-gradient(-10deg,  $orange 0%, lighten($orange,10%) 75%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-10deg,  $orange 0%,lighten($orange,10%) 75%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(170deg,  $orange 0%,lighten($orange,10%) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera10+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$orange', endColorstr='lighten($orange,10%)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
 }
 
 .why-list {
 	text-align:center;
 	margin:0;
+	padding:4%;
+	background-image:url(../images/icon-pattern--white--10.png);
+	background-repeat:repeat;
+	background-size:400px 100px;
+	background-position:center -75px;
 
 	li {
-		max-width:44%;
 		margin:3%;
 		font-size:24px;
 		line-height:1.3;
@@ -326,15 +348,6 @@ HOME STYLES
 		}
 	}
 }
-
-.mdl-tabs__panel.is-active {
-	padding:4%;
-	background-image:url(../images/icon-pattern--white--10.png);
-	background-repeat:repeat;
-	background-size:400px 100px;
-	background-position:center -75px;
-}
-
 /*********************
 PAGE STYLES
 *********************/
