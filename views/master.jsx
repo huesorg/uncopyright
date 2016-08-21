@@ -9,6 +9,7 @@ var MasterLayout = React.createClass({
                     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
                     <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css" />
                     <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/2.1.1/packery.pkgd.min.js"></script>
 
                     <link rel='stylesheet' href='/stylesheets/style.css' />
 
@@ -22,6 +23,7 @@ var MasterLayout = React.createClass({
                     <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
                     <meta name="msapplication-config" content="/images/favicon/browserconfig.xml" />
                     <meta name="theme-color" content="#ffffff" />
+
                 </head>
                 <body>
                     <div className="mdl-layout mdl-js-layout">
@@ -42,7 +44,7 @@ var MasterLayout = React.createClass({
                             </div>
                             <nav className="mdl-navigation">
                                 <a className="mdl-navigation__link" href="./">
-                                    <i className="material-icons">home</i> 
+                                    <i className="material-icons">home</i>
                                     Home
                                 </a>
                                 <a className="mdl-navigation__link" href="/projects">
