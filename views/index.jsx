@@ -130,6 +130,9 @@ var IndexComponent = React.createClass({
                     </div>
                     <div className="mdl-tabs__panel" id="hopes">
                         <ul className="why-list why-list--hopes">
+                            <h2>
+                                Here's what <span>creatives hope to accomplish</span> by uncopyrighting their work
+                            </h2>
                             <li className="packery-item">
                                 <div className="why-list__icon">
                                     <i className="material-icons">
@@ -285,6 +288,9 @@ var IndexComponent = React.createClass({
                     </div>
                     <div className="mdl-tabs__panel" id="fears">
                         <ul className="why-list why-list--fears">
+                            <h2>
+                                Here's what <span>creatives fear</span> in uncopyrighting their work
+                            </h2>
                             <li className="packery-item">
                                 <div className="why-list__icon">
                                     <i className="material-icons">
