@@ -9,9 +9,10 @@ var express = require('express');
     sassMiddleware = require('node-sass-middleware');
     db = require('./models/db'),
     project = require('./models/projects');
-    // user = require('./models/users');
+    user = require('./models/users');
+    user = require('./models/users');
     routes = require('./routes/index');
-    // users = require('./routes/users');
+    users = require('./routes/users');
     projects = require('./routes/projects');
     app = express();
 
@@ -42,7 +43,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // routes
 app.use('/', routes);
 app.use('/projects', projects);
-// app.use('/users', users);
+app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
