@@ -1,6 +1,10 @@
 require('dotenv').config();
 
 var express = require('express');
+    passport = require('passport');
+    LocalStrategy = require('passport-local').Strategy;
+    expressValidator = require('express-validator');
+    session = require('express-session');
     path = require('path');
     favicon = require('serve-favicon');
     logger = require('morgan');
@@ -21,6 +25,32 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jsx');
 app.engine('jsx', require('express-react-views').createEngine());
 
+// sessions
+// TODO: move secret into dotenv
+app.use(session({
+  secret: 'secret',
+  saveUninitialized: true,
+  resave: true
+}));
+
+// Express Validator
+app.use(expressValidator({
+  errorFormatter: function(param, msg, value) {
+      var namespace = param.split('.')
+      , root    = namespace.shift()
+      , formParam = root;
+
+    while(namespace.length) {
+      formParam += '[' + namespace.shift() + ']';
+    }
+    return {
+      param : formParam,
+      msg   : msg,
+      value : value
+    };
+  }
+}));
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -28,6 +58,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+// initialize passport
+app.use(passport.initialize());
+app.use(passport.session());
 
 // styles
 app.use(sassMiddleware({
