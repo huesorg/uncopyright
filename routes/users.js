@@ -18,7 +18,33 @@ router.route('/:id')
 router.route('/register')
 
   .get(function(req, res) {
-    res.send('user register');
+    res.render('users/register');
+  })
+
+  .post(function(req, res) {
+    console.log(req.body);
+
+    var username = req.body.username;
+    var email = req.body.email;
+    var password = req.body.password;
+    var password2 = req.body.password2;
+
+    req.checkBody('username', 'Username is required').notEmpty();
+    req.checkBody('email', 'Email is required').notEmpty();
+    req.checkBody('email', 'Email is not valid').isEmail();
+    req.checkBody('password', 'Password is Required').notEmpty();
+    req.checkBody('password2', 'Passwords must match').equals(req.body.password);
+
+    var errors = req.validationErrors();
+
+    if (errors) {
+      console.log(errors);
+      res.render('users/register', {
+        errors: errors
+      });
+    } else {
+      console.log('NO');
+    }
   })
 
 router.route('/login')

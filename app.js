@@ -14,7 +14,6 @@ var express = require('express');
     db = require('./models/db'),
     project = require('./models/projects');
     user = require('./models/users');
-    user = require('./models/users');
     routes = require('./routes/index');
     users = require('./routes/users');
     projects = require('./routes/projects');
