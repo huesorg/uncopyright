@@ -6,8 +6,8 @@ var RegisterComponent = React.createClass({
 
   getInitialState: function() {
     return {
-      username: 'Username',
-      email: 'Email',
+      username: '',
+      email: '',
       password: '',
       password2: ''
     };
@@ -47,35 +47,48 @@ var RegisterComponent = React.createClass({
         <h1>Register Here!</h1>
 
         <form ref="form" method="post" action="">
-          <input
-            type="text"
-            name="username"
-            placeholder="Username"
-            value={this.state.username}
-            onChange={this.handleChange}
-          />
 
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
+          <div className="row">
+            <label>Username</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              value={this.state.username}
+              onChange={this.handleChange}
+            />
+          </div>
 
-          <input
-            type="password"
-            name="password"
-            value={this.state.password}
-            onChange={this.handleChange}
-          />
+          <div className="row">
+            <label>Email</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              value={this.state.email}
+              onChange={this.handleChange}
+            />
+          </div>
 
-          <input
-            type="password"
-            name="password2"
-            value={this.state.password}
-            onChange={this.handleChange}
-          />
+          <div className="row">
+            <label>Password</label>
+            <input
+              type="password"
+              name="password"
+              value={this.state.password}
+              onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="row">
+            <label>Password Confirmation</label>
+            <input
+              type="password"
+              name="password2"
+              value={this.state.password}
+              onChange={this.handleChange}
+            />
+          </div>
 
           <button type="submit">
             Register

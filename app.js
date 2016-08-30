@@ -10,8 +10,9 @@ var express = require('express');
     logger = require('morgan');
     cookieParser = require('cookie-parser');
     bodyParser = require('body-parser');
+    flash = require('connect-flash');
     sassMiddleware = require('node-sass-middleware');
-    db = require('./models/db'),
+    db = require('./models/db');
     project = require('./models/projects');
     user = require('./models/users');
     routes = require('./routes/index');
@@ -31,6 +32,7 @@ app.use(session({
   saveUninitialized: true,
   resave: true
 }));
+app.use(flash());
 
 // Express Validator
 app.use(expressValidator({

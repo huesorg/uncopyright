@@ -1,7 +1,7 @@
 var express = require('express');
     router = express.Router();
     mongoose = require('mongoose');
-    User = mongoose.model('User');
+    User = require('../models/users');
     passport  = require('passport');
     LocalStrategy = require('passport-local').Strategy;
 
@@ -39,23 +39,72 @@ router.route('/register')
 
     if (errors) {
       console.log(errors);
+
       res.render('users/register', {
         errors: errors
       });
+
     } else {
-      console.log('NO');
+
+      var newUser = new User({
+        username: username,
+        email: email,
+        password: password,
+        createdAt: Date.now()
+      });
+
+      User.createUser(newUser, function(err, user){
+        if (err) throw err;
+        console.log(user);
+      });
+
+      // TODO: implement as flash message
+      req.flash('User successfully created');
+
+      res.redirect('login');
     }
   })
 
-router.route('/login')
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+    User.getUserByUsername(username, function(err, user){
+      if (err) throw err;
+      if(!user){
+        return done(null, false, {message: 'Unknown User'});
+      }
 
-  .get(function(req, res) {
-    res.render('users/login');
-  })
+      User.comparePassword(password, user.password, function(err, isMatch){
+        if (err) throw err;
+        if (isMatch){
+          return done(null, user);
+        } else {
+          return done(null, false, {message: 'Invalid Password'});
+        }
+      });
+    });
+  }
+));
 
-  .post(function(req, res) {
+passport.serializeUser(function(user, done){
+  done(null, user.id);
+});
 
-  })
+passport.deserializeUser(function(id, done){
+  User.getUserById(id, function(err, user){
+    done(err, user);
+  });
+});
+
+router.get('/login', function(req, res) {
+  res.render('users/login');
+})
+
+router.post('/login',
+  passport.authenticate('local',  {successRedirect:'/', failureRedirect:'/about', failureFlash: true}),
+  function(req, res) {
+    console.log('login success!');
+    res.redirect('/');
+  });
 
 router.route('/logout')
 
