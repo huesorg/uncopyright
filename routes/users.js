@@ -41,7 +41,7 @@ router.route('/register')
       console.log(errors);
 
       res.render('users/register', {
-        errors: errors
+        errors: errors[0]
       });
 
     } else {
@@ -99,12 +99,24 @@ router.get('/login', function(req, res) {
   res.render('users/login');
 })
 
-router.post('/login',
-  passport.authenticate('local',  {successRedirect:'/', failureRedirect:'/about', failureFlash: true}),
-  function(req, res) {
-    console.log('login success!');
-    res.redirect('/');
-  });
+// router.post('/login',
+//   passport.authenticate('local',  {successRedirect:'/', failureRedirect:'/about', failureFlash: true}),
+//   function(req, res) {
+//     console.log('login success!');
+//     res.redirect('/');
+//   });
+
+router.post('/login', function(req, res, next) {
+  passport.authenticate('local', function(err, user, info) {
+    if (err) { return next(err); }
+    if (!user) { return res.render('users/login', {error: { param: 'email', msg: 'Email is not valid', value: 'feaeawf' }}); }
+    req.logIn(user, function(err) {
+      if (err) { return next(err); }
+      return res.redirect('/about');
+    });
+  })(req, res, next);
+});
+
 
 router.route('/logout')
 

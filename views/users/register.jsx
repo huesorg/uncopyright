@@ -1,6 +1,8 @@
 var React = require('react');
 var MasterLayout = require('../master');
+var Message = require('../message');
 var ReactDOM = require('react-dom');
+
 
 var RegisterComponent = React.createClass({
 
@@ -42,9 +44,19 @@ var RegisterComponent = React.createClass({
   },
 
   render: function() {
+    var renderMessages;
+
+    if (this.props.errors) {
+      renderMessages = <Message message={ this.props.errors.msg }/>
+    } else {
+      renderMessages = null;
+    }
+
     return (
       <MasterLayout name={ this.props.name }>
         <h1>Register Here!</h1>
+
+        { renderMessages }
 
         <form ref="form" method="post" action="">
 

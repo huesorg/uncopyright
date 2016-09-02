@@ -1,5 +1,6 @@
 var React = require('react');
 var MasterLayout = require('../master');
+var error;
 
 var LoginComponent = React.createClass({
 
@@ -36,10 +37,20 @@ var LoginComponent = React.createClass({
     });
   },
 
+  messages: function() {
+    if (this.props.error) {
+      return (<p>{this.props.error.msg}</p>)
+    } else {
+      return ('')
+    };
+  },
+
   render: function() {
     return (
       <MasterLayout name={ this.props.name }>
         <h1>Login Here!</h1>
+
+        {this.messages}
 
         <form ref="form" method="post" action="">
 
