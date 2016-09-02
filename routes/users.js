@@ -41,7 +41,7 @@ router.route('/register')
       console.log(errors);
 
       res.render('users/register', {
-        errors: errors[0]
+        errors: errors
       });
 
     } else {

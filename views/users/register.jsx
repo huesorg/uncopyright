@@ -1,6 +1,6 @@
 var React = require('react');
 var MasterLayout = require('../master');
-var Message = require('../message');
+var MessageList = require('../message');
 var ReactDOM = require('react-dom');
 
 
@@ -47,7 +47,7 @@ var RegisterComponent = React.createClass({
     var renderMessages;
 
     if (this.props.errors) {
-      renderMessages = <Message message={ this.props.errors.msg }/>
+      renderMessages = <MessageList messages={ this.props.errors }/>
     } else {
       renderMessages = null;
     }
