@@ -65,11 +65,22 @@ router.route('/register')
     }
   })
 
-passport.use(new LocalStrategy(
-  function(username, password, done) {
-    User.getUserByUsername(username, function(err, user){
-      if (err) throw err;
+passport.use(new LocalStrategy({
+    usernameField: 'email'
+  },
+
+  function(email, password, done) {
+    console.log('email: ' + email);
+    console.log('password: ' + password);
+
+    User.getUserByEmail(email, function(err, user){
+      if (err) {
+        console.log(err);
+        throw err;
+      }
+
       if(!user){
+        console.log('unknown user');
         return done(null, false, {message: 'Unknown User'});
       }
 
@@ -98,7 +109,7 @@ passport.deserializeUser(function(id, done){
 router.get('/login', function(req, res) {
   res.render('users/login');
 })
-
+//
 // router.post('/login',
 //   passport.authenticate('local',  {successRedirect:'/', failureRedirect:'/about', failureFlash: true}),
 //   function(req, res) {
@@ -107,16 +118,23 @@ router.get('/login', function(req, res) {
 //   });
 
 router.post('/login', function(req, res, next) {
+
   passport.authenticate('local', function(err, user, info) {
-    if (err) { return next(err); }
-    if (!user) { return res.render('users/login', {error: { param: 'email', msg: 'Email is not valid', value: 'feaeawf' }}); }
+    if (err) {
+      console.log(err);
+      return next(err);
+    }
+
+    if (!user) {
+      return res.redirect('/about');
+    }
+
     req.logIn(user, function(err) {
       if (err) { return next(err); }
-      return res.redirect('/about');
+      return res.redirect('/users/' + user.username);
     });
   })(req, res, next);
 });
-
 
 router.route('/logout')
 
