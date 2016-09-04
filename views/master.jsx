@@ -43,7 +43,7 @@ var MasterLayout = React.createClass({
                                 <span className="mdl-layout__title">Uncopyright Movement</span>
                             </div>
                             <nav className="mdl-navigation">
-                                <a className="mdl-navigation__link" href="./">
+                                <a className="mdl-navigation__link" href="/">
                                     <i className="material-icons">home</i>
                                     Home
                                 </a>
