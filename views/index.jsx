@@ -39,7 +39,7 @@ var IndexComponent = React.createClass({
                         </p>
                         <a
                             className="mdl-button cta-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
-                            href="https://hues.typeform.com/to/ahz9lb">
+                            href="/users/register">
                             Submit a Work
                         </a>
 

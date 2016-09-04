@@ -9,7 +9,11 @@ router.route('/')
 
   // Redirect to login or user show if logged in
   .get(function(req, res) {
-    res.send('users index');
+    if (req.user) {
+      res.redirect('/users/' + req.user.id)
+    } else {
+      res.redirect('users/login')
+    }
   })
 
 router.route('/:id')
@@ -108,14 +112,8 @@ passport.deserializeUser(function(id, done){
 
 router.get('/login', function(req, res) {
   res.render('users/login');
-})
-//
-// router.post('/login',
-//   passport.authenticate('local',  {successRedirect:'/', failureRedirect:'/about', failureFlash: true}),
-//   function(req, res) {
-//     console.log('login success!');
-//     res.redirect('/');
-//   });
+});
+
 
 router.post('/login', function(req, res, next) {
 
@@ -126,16 +124,30 @@ router.post('/login', function(req, res, next) {
     }
 
     if (!user) {
-      return res.redirect('/about');
+      return res.redirect('/users/login');
     }
 
     req.logIn(user, function(err) {
       if (err) { return next(err); }
-      return res.redirect('/users/' + user.username);
+      return res.redirect('/users/' + user._id);
     });
   })(req, res, next);
 });
 
-router.route('/logout')
+// router.route('/logout')
+
+router.route('/:id')
+  .get(function(req, res) {
+    if (req.user) {
+
+      // TODO: fetch projects belonging to user
+      res.render('users/show', {
+        user: req.user
+      });
+      
+    } else {
+      res.redirect('users/login');
+    }
+  })
 
 module.exports = router;

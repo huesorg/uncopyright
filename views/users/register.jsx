@@ -1,8 +1,6 @@
 var React = require('react');
 var MasterLayout = require('../master');
 var MessageList = require('../message');
-var ReactDOM = require('react-dom');
-
 
 var RegisterComponent = React.createClass({
 

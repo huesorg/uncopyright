@@ -1,6 +1,5 @@
 var React = require('react');
 var MasterLayout = require('../master');
-var error;
 
 var LoginComponent = React.createClass({
 
