@@ -1,9 +1,9 @@
 var express = require('express');
     router = express.Router();
+    auth = require('../config/auth');
     mongoose = require('mongoose');
     User = require('../models/users');
     passport  = require('passport');
-    LocalStrategy = require('passport-local').Strategy;
 
 router.route('/')
 
@@ -16,8 +16,6 @@ router.route('/')
     }
   })
 
-router.route('/:id')
-  // User Show
 
 router.route('/register')
 
@@ -69,74 +67,39 @@ router.route('/register')
     }
   })
 
-passport.use(new LocalStrategy({
-    usernameField: 'email'
-  },
 
-  function(email, password, done) {
-    console.log('email: ' + email);
-    console.log('password: ' + password);
+router.route('/login')
 
-    User.getUserByEmail(email, function(err, user){
+  .get(function(req, res) {
+    res.render('users/login');
+  })
+
+
+  .post(function(req, res, next) {
+
+    passport.authenticate('local', function(err, user, info) {
       if (err) {
         console.log(err);
-        throw err;
+        return next(err);
       }
 
-      if(!user){
-        console.log('unknown user');
-        return done(null, false, {message: 'Unknown User'});
+      if (!user) {
+        return res.redirect('/users/login');
       }
 
-      User.comparePassword(password, user.password, function(err, isMatch){
-        if (err) throw err;
-        if (isMatch){
-          return done(null, user);
-        } else {
-          return done(null, false, {message: 'Invalid Password'});
-        }
+      req.logIn(user, function(err) {
+        if (err) { return next(err); }
+        return res.redirect('/users/' + user._id);
       });
-    });
-  }
-));
-
-passport.serializeUser(function(user, done){
-  done(null, user.id);
-});
-
-passport.deserializeUser(function(id, done){
-  User.getUserById(id, function(err, user){
-    done(err, user);
-  });
-});
-
-router.get('/login', function(req, res) {
-  res.render('users/login');
-});
+    })(req, res, next);
+  })
 
 
-router.post('/login', function(req, res, next) {
+router.route('/logout')
 
-  passport.authenticate('local', function(err, user, info) {
-    if (err) {
-      console.log(err);
-      return next(err);
-    }
-
-    if (!user) {
-      return res.redirect('/users/login');
-    }
-
-    req.logIn(user, function(err) {
-      if (err) { return next(err); }
-      return res.redirect('/users/' + user._id);
-    });
-  })(req, res, next);
-});
-
-// router.route('/logout')
 
 router.route('/:id')
+
   .get(function(req, res) {
     if (req.user) {
 
@@ -144,10 +107,11 @@ router.route('/:id')
       res.render('users/show', {
         user: req.user
       });
-      
+
     } else {
       res.redirect('users/login');
     }
   })
+  
 
 module.exports = router;
