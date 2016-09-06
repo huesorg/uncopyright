@@ -17,25 +17,6 @@ var LoginComponent = React.createClass({
     });
   },
 
-  handleSubmit: function(e) {
-    e.preventDefault();
-
-    $.ajax({
-      url: '/users/login',
-      dataType: 'json',
-      contentType: 'application/json',
-      type: 'POST',
-      data: data,
-      success: function(data) {
-        this.setState({});
-      }.bind(this),
-      error: function(xhr, status, err) {
-        //this.setState({data: user});
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-  },
-
   messages: function() {
     if (this.props.error) {
       return (<p>{this.props.error.msg}</p>)

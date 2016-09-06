@@ -22,25 +22,6 @@ var RegisterComponent = React.createClass({
     });
   },
 
-  handleSubmit: function(e) {
-    e.preventDefault();
-
-    $.ajax({
-      url: '/users/registration',
-      dataType: 'json',
-      contentType: 'application/json',
-      type: 'POST',
-      data: data,
-      success: function(data) {
-        this.setState({});
-      }.bind(this),
-      error: function(xhr, status, err) {
-        //this.setState({data: user});
-        console.error(this.props.url, status, err.toString());
-      }.bind(this)
-    });
-  },
-
   render: function() {
     var renderMessages;
 
