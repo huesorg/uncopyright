@@ -11,7 +11,9 @@ router.route('/')
     Project.find({}, function (err, projects) {
 
       if (err) {
+
         return console.error(err);
+
       } else {
 
         res.render('projects/index', {
@@ -57,7 +59,9 @@ router.route('/:id')
     Project.findById(req.id, function (err, project) {
 
       if (err) {
+
         console.log('GET Error: There was a problem retrieving: ' + err);
+        
       } else {
 
         res.render('projects/show', {

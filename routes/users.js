@@ -12,7 +12,7 @@ router.route('/')
     if (req.user) {
       res.redirect('/users/' + req.user.id)
     } else {
-      res.redirect('users/login')
+      res.redirect('/users/login')
     }
   })
 
@@ -97,6 +97,26 @@ router.route('/login')
 
 router.route('/logout')
 
+  .get(function(req, res) {
+
+    if (req.user) {
+      req.logout();
+
+      req.flash('success_msg', 'You are successfully logged out');
+
+      res.redirect('login');
+    } else {
+      res.redirect('/about');
+    }
+
+  })
+
+router.route('/reset')
+
+  .get(function(req, res) {
+    res.send('password reset route');
+  })
+
 
 router.route('/:id')
 
@@ -112,6 +132,60 @@ router.route('/:id')
       res.redirect('users/login');
     }
   })
-  
+
+
+router.route('/:id/edit')
+
+  .get(function(req,res) {
+
+    if (req.user) {
+      console.log(req.user);
+
+      res.render('users/edit', {
+        user: req.user
+      });
+
+    } else {
+      res.send('no user found');
+    }
+
+  })
+
+  .post(function(req, res) {
+    console.log(req.body);
+
+    var username = req.body.username;
+    var email = req.body.email;
+
+    req.checkBody('username', 'Username is required').notEmpty();
+    req.checkBody('email', 'Email is required').notEmpty();
+    req.checkBody('email', 'Email is not valid').isEmail();
+
+    var errors = req.validationErrors();
+
+    if (errors) {
+      console.log(errors);
+
+      res.render('users/register', {
+        errors: errors
+      });
+
+    } else {
+
+      User.getUserById(req.user.id, function(err, user){
+        if (err) throw err;
+
+        user.username = username;
+        user.email = email;
+        user.save();
+
+        res.render('users/edit', {
+          user: user, message: "Successfully updated user!"
+        });
+      });
+    }
+  })
+
+
 
 module.exports = router;
